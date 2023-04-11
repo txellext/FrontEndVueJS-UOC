@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo-uoc.png&psig=AOvVaw2NUviwg64PXrw-MU0xyPzB&ust=1681320751847000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPD2qYyuov4CFQAAAAAdAAAAABAI" alt="uoc logo" /> 
+    <img src="/FrontEndVueJS-UOC/images/logo_uoc.png" alt="uoc logo" /> 
 
 
 <br />
