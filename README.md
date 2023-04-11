@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-    <img src="/FrontEndVueJS-UOC/images/logo_uoc.png" alt="uoc logo" /> 
+    <img src="/images/logo_uoc.png" alt="uoc logo" /> 
 
 
 <br />
