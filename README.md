@@ -56,9 +56,6 @@ Technical Stack:
 
 
 
-<h2 align="center">🤝 Support</h2>
-
-<p align="center">🎊 Contributions, 🔥 issues, 🐛 bugs, and 🥮 feature requests are most welcome!</p>
-
+<br>
 
 <p align="center"><> with ❤️ in BCN</p>
