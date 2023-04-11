@@ -1,12 +1,12 @@
 <br>
 <div align="center">
-    <img src="https://www.google.com/search?q=logo+UOC+open+university+of+catalonia&tbm=isch&ved=2ahUKEwiF9b_7raL-AhWJpicCHYmBAIYQ2-cCegQIABAA&oq=logo+UOC+open+university+of+catalonia&gs_lcp=CgNpbWcQA1CHB1jyJWCAJ2gAcAB4AIABggGIAb8QkgEEMC4xOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=oJk1ZIWlOYnNnsEPiYOCsAg&bih=1203&biw=1197#imgrc=6Qn0EYodQRHXFM" alt="uoc logo" /> 
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo-uoc.png&psig=AOvVaw2NUviwg64PXrw-MU0xyPzB&ust=1681320751847000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPD2qYyuov4CFQAAAAAdAAAAABAI" alt="uoc logo" /> 
 
 
 <br />
     <h1 align="center"> Front End Web Developer Course </h1>
     <div align="center">
-        <a href="https://uoc-formacio-online.cat/front-end-web-developer/"> View Course Official Page </a>
+        <a href="https://uoc-formacio-online.cat/front-end-web-developer/"> Course Official Website </a>
     </div>
 </div>
 
@@ -39,14 +39,6 @@ TODO
 
 <br>
 
-### 🛠️ Technical specifications
-
-Technical Stack:
-- Client: Vue.js, Vite (dev server)
-- Router: Vue Router
-
-<br>
-
 ### 🌐 Built with
 - Vue 
 - JavaScript 
@@ -57,5 +49,7 @@ Technical Stack:
 
 
 <br>
+
+##
 
 <p align="center"><> with ❤️ in BCN</p>
