@@ -22,6 +22,24 @@ html {
 
 /*###### indexCss.html ######*/
 
+/*Header*/
+.banner-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.banner-header h1 {
+    position: absolute;
+
+}
+
+.banner-header img,
+.banner-header picture {
+    width: 100%;
+}
 
 /*Back to top button*/
 .fixed {
@@ -52,6 +70,7 @@ html {
     background-color: grey;
     display: flex;
     flex-direction: row;
+    padding: 1rem;
 
 }
 
@@ -74,8 +93,12 @@ html {
 
 /*###### Media queries ######*/
 
-/*Mobile*/
-@media only screen and (max-width: 600px) {
+/*Mobile first*/
+
+
+
+
+@media only screen and (min-width: 600px) {
     body {
         background-color: pink;
     }
@@ -84,9 +107,10 @@ html {
 
 
 
-/*Laptop/desktops*/
+/*Laptop/desktops
 @media only screen and (min-width: 900px) {
     body {
         background-color: aquamarine;
     }
 }
+*/
