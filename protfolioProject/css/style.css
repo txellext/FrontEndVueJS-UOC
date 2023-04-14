@@ -40,3 +40,22 @@ html {
 
 
 /*contactForm Style*/
+
+
+
+/*Mobile media queries*/
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: pink;
+    }
+   
+}
+
+
+
+/*Laptop/desktops media queries*/
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: aquamarine;
+    }
+}
