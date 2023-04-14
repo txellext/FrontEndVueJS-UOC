@@ -1,4 +1,4 @@
-/* All elements will take this style */
+/*###### GENERAL STYLE ######*/
 * {
     box-sizing: border-box;
 }
@@ -7,20 +7,30 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Navbar*/
+
 .sticky {
     position: sticky;
     top: 0;
 }
 
 
+/*Footer*/
 
-/*Index Style*/
 
+
+
+/*###### indexCss.html ######*/
+
+
+/*Back to top button*/
 .fixed {
     position:fixed;
     right:10px;
     bottom: 10px;
 }
+
+/*Section - Projects*/
 
 .project-cards {
     display: flex;
@@ -36,14 +46,35 @@ html {
 
 }
 
-/*CV Style*/
+/*Section - hobbies*/
+
+.hobbies {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hobbies-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
 
 
-/*contactForm Style*/
+}
+
+/*###### cvCss.html ######*/
+
+
+/*###### contactFormCss.html ######*/
 
 
 
-/*Mobile media queries*/
+
+/*###### Media queries ######*/
+
+/*Mobile*/
 @media only screen and (max-width: 600px) {
     body {
         background-color: pink;
@@ -53,7 +84,7 @@ html {
 
 
 
-/*Laptop/desktops media queries*/
+/*Laptop/desktops*/
 @media only screen and (min-width: 900px) {
     body {
         background-color: aquamarine;
