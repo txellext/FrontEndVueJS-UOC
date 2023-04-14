@@ -1,0 +1,42 @@
+/* All elements will take this style */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+
+
+/*Index Style*/
+
+.fixed {
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 5 rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+
+}
+
+/*CV Style*/
+
+
+/*contactForm Style*/
