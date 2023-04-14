@@ -5,6 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact me</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <img src="./assets/img/logo_TA_black.png" alt="logo_TA" />
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./cv.html">CV</a>
+        </li>
+        <li>
+          <a href="./contactForm.html">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+    <header id="form-header">
+      <h1>Contact me</h1>
+      <img src="./assets/img/mailbox4.jpg" alt="mailbox" />
+    </header>
+    <section id="section-form">
+      <h2>Get in touch!</h2>
+      <form action="./contactForm.html" method="get">
+        <label for="full_name">Name: </label>
+        <input type="text" placeholder="Your name" name="full_name" id="name" />
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Your email" name="email" id="email" />
+        <label for="form_comments">Comments: </label>
+        <textarea
+          name="form_comments"
+          id="comment"
+          rows="4"
+          cols="33"
+        ></textarea
+        ><br />
+        <input type="checkbox" name="privacy_policy" value="policy" />
+        <label for="privacy_policy"
+          >I have read and accept The Privacy Policy.</label
+        ><br />
+        <button class="button-form" type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <img src="./assets/img/logo_insta.jpg" alt="insta_logo" />
+      <img src="./assets/img/linkedin_logo.jpg" alt="linkedin_logo" />
+      <img src="./assets/img/github_logo.jpg" alt="github_logo" />
+    </footer>
+  </body>
 </html>
