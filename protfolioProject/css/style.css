@@ -122,7 +122,7 @@ footer a {
     margin-bottom: 5px;
 }
 
-.section-form button {
+.button-style {
     width:fit-content;
     padding: 5px 8px;
     background-color: white;
@@ -165,7 +165,7 @@ footer a {
     background-image: url("../assets/img/aboutme_8.jpg");
     background-size: contain;
     background-repeat: round;
-    opacity: 0.2;
+    opacity: 0.1;
 
 }
 
@@ -178,6 +178,7 @@ footer a {
 
 .project-cards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 5 rem;
     flex-wrap: wrap;
@@ -188,6 +189,34 @@ footer a {
     justify-content:center;
     flex-direction: column;
 
+}
+
+/*Section - experience*/
+#section-experience {
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    margin: 30px 0;
+}
+
+#section-experience h2 {
+    margin-bottom: 30px;
+}
+
+#images-experience {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-skill {
+    padding-bottom: 20px;
+    height: 175px;
+}
+
+.image-skill img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*Section - hobbies*/
@@ -206,6 +235,7 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5rem;
 }
+
 
 
 /*###### cvCss.html ######*/
@@ -236,9 +266,15 @@ footer a {
     .hello-parag {
       margin-right: 50px;
       background-image: none;
+      opacity: 1;
+    }
+    #images-experience {
+        flex-direction: row;
     }
 
-
+    .image-skill {
+        padding: 15px;
+    }
 }
 
 
