@@ -27,15 +27,12 @@ nav {
 
 
 
-/*#logoTA {
-    position:absolute;
-    top: 0.47%;
-    bottom: 98.4%;
-    left: 1.67%;
-    right:95.56%;
-    width: 40px;
-    height: 32.7px;
-}*/
+#logoTA {
+    width: 200px;
+    height: 160px;
+    margin-left: -45px;
+    margin-top: 40px;
+}
 
 
 
