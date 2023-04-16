@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-
     <nav>
       <div>
-        <img id="logoTA" src="./assets/img/logo_TA.png"  alt="logo_TA" />
-      </div>  
+        <img id="logoTA" src="./assets/img/logo_TA.png" alt="logo_TA" />
+      </div>
       <ul class="ul-nav">
-         <li>
+        <li>
           <a href="./indexCss.html">Home</a>
         </li>
         <li>
@@ -26,10 +25,25 @@
       </ul>
     </nav>
 
-    <header id="form-header">
+    <header class="banner-header">
       <h1>Contact me</h1>
-      <img src="./assets/img/mailbox4.jpg" alt="mailbox" />
+      <picture>
+        <source
+          srcset="./assets/img/mailbox4_medium.jpg"
+          media="(min-width: 600px)"
+        />
+        <source
+          srcset="./assets/img/mailbox4.jpg"
+          media="(min-width: 1200px)"
+        />
+        <img
+          src="./assets/img/mailbox4_small.jpg"
+          height="400px"
+          alt="mailbox beach"
+        />
+      </picture>
     </header>
+
     <section id="section-form">
       <h2>Get in touch!</h2>
       <form action="./contactForm.html" method="get">
@@ -43,19 +57,29 @@
           id="comment"
           rows="4"
           cols="33"
-        ></textarea
-        ><br />
-        <input type="checkbox" name="privacy_policy" value="policy" />
-        <label for="privacy_policy"
-          >I have read and accept The Privacy Policy.</label
-        ><br />
-        <button class="button-form" type="submit">Send</button>
+        ></textarea>
+        <div class="checkbox-div">
+          <input type="checkbox" name="privacy_policy" value="policy" />
+          <label for="privacy_policy"
+            >I have read and accept The Privacy Policy.</label
+          >
+        </div>
+        <div class="button-div">
+          <button type="submit">Send</button>
+        </div>
       </form>
     </section>
+
     <footer>
-      <a class="logos-pic" href="https://www.instagram.com/txellext/"> <img src="./assets/img/insta_logo3.png" alt="insta_logo" /></a>
-      <a class="logos-pic" href="https://www.linkedin.com/in/txellamigo/"> <img src="./assets/img/linkedin_logo.jpg" alt="linkedin_logo" /></a>
-      <a class="logos-pic" href="https://github.com/txellext"> <img src="./assets/img/github_logo.jpg" alt="github_logo" /></a>
+      <a class="logos-pic" href="https://www.instagram.com/txellext/">
+        <img src="./assets/img/insta_logo3.png" alt="insta_logo"
+      /></a>
+      <a class="logos-pic" href="https://www.linkedin.com/in/txellamigo/">
+        <img src="./assets/img/linkedin_logo.jpg" alt="linkedin_logo"
+      /></a>
+      <a class="logos-pic" href="https://github.com/txellext">
+        <img src="./assets/img/github_logo.jpg" alt="github_logo"
+      /></a>
     </footer>
   </body>
 </html>
