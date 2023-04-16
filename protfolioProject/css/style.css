@@ -71,7 +71,7 @@ footer a {
 }
 
 
-/*###### indexCss.html ######*/
+/*###### contactFormCss.html ######*/
 
 /*Header*/
 .banner-header {
@@ -97,11 +97,81 @@ footer a {
 
 }
 
+/* Form */
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-form h2{
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.section-form form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.section-form label {
+    margin-bottom: 3px;
+}
+.section-form input {
+    margin-bottom: 5px;
+}
+
+.section-form button {
+    width:fit-content;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 20%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.checkbox-div {
+    margin-top: 5px;
+}
+
+.button-div {
+    text-align: center;
+}
+
+
+
+/*###### indexCss.html ######*/
+
 /*Back to top button*/
 .fixed {
     position:fixed;
     right:10px;
     bottom: 10px;
+}
+
+/* Section Hello */
+
+.hello-p-img {
+    display:flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.hello-parag {
+    justify-content: flex-start;
+    text-align: justify;
+    background-image: url("../assets/img/aboutme_8.jpg");
+    background-size: contain;
+    background-repeat: round;
+    opacity: 0.2;
+
+}
+
+#hello-img {
+    display: none;
+    visibility: hidden;
 }
 
 /*Section - Projects*/
@@ -135,56 +205,10 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5rem;
-
-
 }
+
 
 /*###### cvCss.html ######*/
-
-
-/*###### contactFormCss.html ######*/
-
-#section-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-#section-form h2{
-    margin-bottom: 30px;
-}
-
-#section-form form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-#section-form label {
-    margin-bottom: 3px;
-}
-#section-form input {
-    margin-bottom: 5px;
-}
-
-#section-form button {
-    width:fit-content;
-    padding: 5px 8px;
-    background-color: white;
-    border-radius: 20%;
-    border: 1px solid black;
-    cursor: pointer;
-    margin: 20px;
-}
-
-.checkbox-div {
-    margin-top: 5px;
-}
-
-.button-div {
-    text-align: center;
-}
 
 
 /*###### Media queries ######*/
@@ -198,7 +222,23 @@ footer a {
     body {
         background-color: pink;
     }
-   
+
+    .hello-p-img {
+       align-items: center;
+    }
+
+    #hello-img {
+        display:flex;
+        visibility: visible;
+        height: 220px;
+    }
+
+    .hello-parag {
+      margin-right: 50px;
+      background-image: none;
+    }
+
+
 }
 
 
