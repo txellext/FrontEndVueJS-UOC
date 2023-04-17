@@ -295,19 +295,30 @@ footer {
 
 /*###### cvCss.html ######*/
 
+.header-cv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 20px;
 
+}
 
+.header-cv img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
-
+#txell_avatar:hover {
+    content: url("../assets/img/hover-txell-img.jpg")
+}
 
 
 
 /*###### Media queries ######*/
 
 /*Mobile first*/
-
-
-
 
 @media only screen and (min-width: 600px) {
     body {
@@ -349,14 +360,11 @@ footer {
     .project-card {
         margin: 20px;
     }
-}
 
+    /*cv.html*/
 
-
-/*Laptop/desktops
-@media only screen and (min-width: 900px) {
-    body {
-        background-color: aquamarine;
+    .header-cv {
+        flex-direction: row-reverse;
+    
     }
 }
-*/
