@@ -59,9 +59,10 @@ footer {
     height: 90px; 
 }
 
-footer a {
+.logos-pic{
     width: 40px;
-    height: 32px;
+    display:flex;
+    justify-content: center;
 }
 
 .logos-pic img {
