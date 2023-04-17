@@ -151,6 +151,18 @@ footer a {
     bottom: 10px;
 }
 
+.button-style-up {
+    width:fit-content;
+    padding: 5px 8px;
+    background-color: grey;
+    border-radius: 10%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 50px;
+    font-size: 0.5rem;
+}
+
+
 /* Section Hello */
 
 .hello-p-img {
