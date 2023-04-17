@@ -311,9 +311,41 @@ footer {
 }
 
 #txell_avatar:hover {
-    content: url("../assets/img/hover-txell-img.jpg")
+    content: url("../assets/img/hover-txell-img.jpg");
+    cursor: pointer;
 }
 
+.header-cv-title {
+    text-align: center;
+}
+
+.header-cv-title h1 {
+    margin-bottom: 5px;
+}
+
+.header-cv-title h2 {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+#hr-cv {
+    display: none;
+}
+
+#index {
+    text-align: center;
+    margin: 20px;
+}
+
+#index a {
+    padding: 2px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(199, 21, 133);
+    font-weight: bold;
+    
+
+}
 
 
 /*###### Media queries ######*/
@@ -365,6 +397,19 @@ footer {
 
     .header-cv {
         flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .header-cv picture {
+        margin-right: 25px;
+    }
     
+    .header-cv-title {
+        text-align: left;
+    }
+
+    #hr-cv {
+        display:block;
+        border: 1px solid black;
     }
 }
