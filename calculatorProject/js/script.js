@@ -11,11 +11,11 @@ function numbersValidation() {
   }
 }
 
-// Summ function
-function summNum1Num2(num1, num2) {
-  let summ = num1 + num2;
-  console.log(summ);
-  //return summ;
+// Sum function
+function sumNum1Num2(num1, num2) {
+  let sum = num1 + num2;
+  console.log("The sum is: " + sum);
+  //return alert('The sum is: ' + sum);
 }
 
 // Prime function
@@ -31,7 +31,21 @@ function primeNum1Num2(num1, num2) {
   }
 }
 
+// Even Odd function
+function evenOddNum1Num2(num1, num2) {
+  if ((num1 % 2 == 0) & (num2 % 2 == 0)) {
+    console.log(num1 + " and " + num2 + " ara even numbers");
+  } else if ((num1 % 2 == 0) & (num2 % 2 != 0)) {
+    console.log(num1 + " is an even number and " + num2 + " is an odd number");
+  } else if ((num1 % 2 != 0) & (num2 % 2 == 0)) {
+    console.log(num2 + " is an even number and " + num1 + " is an odd number");
+  } else {
+    console.log("Both " + num1 + "and " + num2 + " are odd numbers");
+  }
+}
+
 // Call functions
 numbersValidation(num1, num2);
-summNum1Num2(num1, num2);
+sumNum1Num2(num1, num2);
 primeNum1Num2(num1, num2);
+evenOddNum1Num2(num1, num2);
