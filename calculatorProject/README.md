@@ -2,8 +2,8 @@
 <div align="center">
     <img src="/images/logo_uoc.png" alt="uoc logo" /> 
     <br>
-    <h1 align="center"> Front End Web Developer Course </h1>
-    <h2 align="center"> JS - Calculator Program </h2>
+    <h1 align="center">  JS - Calculator Program </h1>
+    <h2 align="center"> Front End Web Developer Course </h2>
 </div>
 
 <br>
@@ -13,6 +13,7 @@
 Let's create a index.html where you will code the exercise, a Calculator app. 
 If you want to request a numbers to the user you will use the promt() function of JS. 
 
+<br>
 
 ### Tasks
 
@@ -31,7 +32,7 @@ Let's create an app that request 2 numbers (num1 i num2) inside a rang number of
   
 -  If numbers doesn't meet any of before requirements, you should notify it to the user. 
 
-
+<br>
 
 ### 👷 Authors
 
