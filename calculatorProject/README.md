@@ -12,8 +12,14 @@
 
 Let's create a index.html where you will code the exercise, a Calculator app. 
 If you want to request a numbers to the user you will use the promt() function of JS. 
+All messages are going to show up at the console level using an alert() function.
 
 <br>
+
+### Goals
+- Wake up logical thinking with small mathematic problems.
+- Use basic JS tools
+- Learn how to debug you code. 
 
 ### Tasks
 
