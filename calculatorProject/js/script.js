@@ -54,22 +54,22 @@ function evenOddNum1Num2(num1, num2) {
 }
 
 // list numbers function
-function listNumbers(num1, num2) {
+function range(num1, num2) {
   let arrayList = [];
   if (num1 < num2) {
     for (i = num1; i <= num2; i++) {
       if (i % 2 == 0) {
-        arrayList.add(i);
+        arrayList.push(i);
       }
     }
   } else if (num1 > num2) {
-    for (i = num1; i <= num2; i--) {
+    for (i = num1; i >= num2; i--) {
       if (i % 2 != 0) {
-        arrayList.add(i);
+        arrayList.push(i);
       }
     }
   } else {
-    arrayList.add(num1);
+    arrayList.push(num1);
   }
   //alert('Range: ' + arrayList);
   console.log("Range: " + arrayList);
@@ -80,4 +80,4 @@ numbersValidation(num1, num2);
 sumNum1Num2(num1, num2);
 primeNum1Num2(num1, num2);
 evenOddNum1Num2(num1, num2);
-listNumbers(num1, num2);
+range(num1, num2);
