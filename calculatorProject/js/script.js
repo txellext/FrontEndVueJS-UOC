@@ -1,3 +1,4 @@
+// Declare variables
 var num1 = +prompt("Give me number 1");
 var num2 = +prompt("Give me number 2");
 
@@ -12,9 +13,25 @@ function numbersValidation() {
 
 // Summ function
 function summNum1Num2(num1, num2) {
-  summ = num1 + num2;
+  let summ = num1 + num2;
   console.log(summ);
   //return summ;
 }
 
+// Prime function
+function primeNum1Num2(num1, num2) {
+  if ((num1 % num1 == 0) & (num2 % num2 == 0)) {
+    console.log(num1 + " and " + num2 + " ara prime numbers");
+  } else if ((num1 % num1 == 0) & (num2 % num2 != 0)) {
+    console.log("Only " + num1 + " is a prime number");
+  } else if ((num1 % num1 != 0) & (num2 % num2 == 0)) {
+    console.log("Only " + num2 + " is a prime number");
+  } else {
+    console.log("None of them ara prime numbers");
+  }
+}
+
+// Call functions
+numbersValidation(num1, num2);
 summNum1Num2(num1, num2);
+primeNum1Num2(num1, num2);
