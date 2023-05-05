@@ -25,8 +25,11 @@ function sumNum1Num2(num1, num2) {
 
 // Prime function
 function primeNum1Num2(num1, num2) {
-  let arrayNums = [num1, num2];
+  let arrayNums = [];
   let arrayResult = [];
+
+  arrayNums.push(num1, num2);
+  console.log(arrayNums);
 
   for (let i = 0; i < arrayNums.length; i++) {
     let isPrime = true;
@@ -34,8 +37,8 @@ function primeNum1Num2(num1, num2) {
     if (arrayNums[i] === 1) {
       isPrime = false;
     } else if (arrayNums[i] > 1) {
-      let j = 1;
-      while (j < arrayNums[i] || isPrime) {
+      let j = 2;
+      while ((j < arrayNums[i]) & isPrime) {
         if (arrayNums[i] % j == 0) {
           isPrime = false;
         }
@@ -49,6 +52,7 @@ function primeNum1Num2(num1, num2) {
     } else {
       arrayResult.push(" " + arrayNums[i] + " is a prime number");
     }
+    console.log(arrayResult);
   }
   return arrayResult;
 }
