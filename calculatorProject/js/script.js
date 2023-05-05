@@ -25,34 +25,45 @@ function sumNum1Num2(num1, num2) {
 
 // Prime function
 function primeNum1Num2(num1, num2) {
-  let result;
-  let i = 2;
-  if ((num1 % i == 0) & (num2 % i == 0)) {
-    //console.log(num1 + " and " + num2 + " ara prime numbers");
-    result = num1 + " and " + num2 + " ara prime numbers";
-  } else if ((num1 % i == 0) & (num2 % i != 0)) {
-    //console.log("Only " + num1 + " is a prime number");
-    result = "Only " + num1 + " is a prime number";
-  } else if ((num1 % i != 0) & (num2 % i == 0)) {
-    //console.log("Only " + num2 + " is a prime number");
-    result = "Only " + num2 + " is a prime number";
-  } else {
-    //console.log("None of them ara prime numbers");
-    result = "None of them ara prime numbers";
+  let arrayNums = [num1, num2];
+  let arrayResult = [];
+
+  for (let i = 0; i < arrayNums.length; i++) {
+    let isPrime = true;
+
+    if (arrayNums[i] === 1) {
+      isPrime = false;
+    } else if (arrayNums[i] > 1) {
+      let j = 1;
+      while (j < arrayNums[i] || isPrime) {
+        if (arrayNums[i] % j == 0) {
+          isPrime = false;
+        }
+
+        j++;
+      }
+    }
+
+    if (!isPrime) {
+      arrayResult.push(" " + arrayNums[i] + " is not a prime number");
+    } else {
+      arrayResult.push(" " + arrayNums[i] + " is a prime number");
+    }
   }
-  return result;
+  return arrayResult;
 }
 
 // Even Odd function
 function evenOddNum1Num2(num1, num2) {
   let result;
-  if ((num1 % 2 == 0) & (num2 % 2 == 0)) {
+  let i = 2;
+  if ((num1 % i == 0) & (num2 % i == 0)) {
     //console.log(num1 + " and " + num2 + " ara even numbers");
     result = num1 + " and " + num2 + " ara even numbers";
-  } else if ((num1 % 2 == 0) & (num2 % 2 != 0)) {
+  } else if ((num1 % i == 0) & (num2 % i != 0)) {
     //console.log(num1 + " is an even number and " + num2 + " is an odd number");
     result = num1 + " is an even number and " + num2 + " is an odd number";
-  } else if ((num1 % 2 != 0) & (num2 % 2 == 0)) {
+  } else if ((num1 % i != 0) & (num2 % i == 0)) {
     //console.log(num2 + " is an even number and " + num1 + " is an odd number");
     result = num2 + " is an even number and " + num1 + " is an odd number";
   } else {
