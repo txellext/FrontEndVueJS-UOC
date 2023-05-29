@@ -1,0 +1,86 @@
+/*###### GENERAL STYLE ######*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*### HEADER ###*/
+.nav{
+    display:flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+
+
+.skewed {
+    display: flex;
+    height: 200px;
+    background: #fcd49b;
+    z-index: 0;
+    transform: skewY(-13deg);
+    transform-origin: top left;
+  }
+
+.div-modes{
+    /* margin-left: 100px; */
+}
+
+.search-info {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card article{
+    width: 18rem;
+}
+
+
+/* ### Pokemon Random Button*/
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #fcd49b;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
