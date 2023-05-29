@@ -16,24 +16,42 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <title>Pokedex</title>
+    <title>Pokédex</title>
   </head>
   <body>
     <header>
-        <h1>POKEDEX</h1>
-        <nav>
-            <label for="darkRadio">Dark</label>
-            <input type="radio" name="theme" id="darkRadio" value="dark" checked>
-            <label for="lightRadio">Light</label>
-            <input type="radio" name="theme" id="lightRadio" value="light">
-        </nav>
+      <nav>
+        <h1>POKÉDEX</h1>
+        <label for="darkRadio">Dark</label>
+        <input type="radio" name="theme" id="darkRadio" value="dark" checked />
+        <label for="lightRadio">Light</label>
+        <input type="radio" name="theme" id="lightRadio" value="light" />
+      </nav>
     </header>
     <main>
+      <section class="search-info">
+        <button onclick="getRandomPokemon()">Random Pokemons</button>
+        <label for="pokemonName">Search by name </label>
+        <input
+          type="text"
+          placeholder="Pokemon Name"
+          id="pokemonName"
+          name="pokemon-name"
+        />
+        <button type="submit">Search</button>
+      </section>
 
+      <section id="cards"></section>
+
+      <template id="template">
+        <article id="" class="card">
+          <img src="" alt="Pokemon pic" />
+          <p class="pokemonID"></p>
+          <p class="pokemonName"></p>
+        </article>
+      </template>
     </main>
-
-    <!-- JavaScript -->
-    <script src="./js/script.js"></script>
+    <!-- JS -->
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
