@@ -32,12 +32,20 @@ async function fetchApi(randomNum) {
   let card = clonedTemplate.querySelector(".card");
   let pokemonId = clonedTemplate.querySelector(".pokemonID");
   let randomPokemon = clonedTemplate.querySelector(".pokemonName");
-  let pokemonImg = clonedTemplate.querySelector("img");
-
+  let pokemonAtac = clonedTemplate.querySelector(".atac");
+  let pokemonDefensa = clonedTemplate.querySelector(".defensa");
+  let pokemonTipus = clonedTemplate.querySelector(".tipus");
+  let pokemonImg = clonedTemplate.querySelector(".img1");
+  let pokemonImgBack = clonedTemplate.querySelector(".img2");
+  
   card.setAttribute("id", data.id);
   pokemonId.textContent = `#${data.id}`;
   randomPokemon.textContent = data.name;
+  pokemonAtac.textContent = `attack: ${data.stats[1].base_stat}`;
+  pokemonDefensa.textContent = `defense: ${data.stats[2].base_stat}`;
+  // pokemonTipus.textContent = data.name;
   pokemonImg.setAttribute("src", data.sprites.other.home.front_default);
+  pokemonImgBack.setAttribute("src", data.sprites.back_default);
 
   output.appendChild(clonedTemplate);
 }
