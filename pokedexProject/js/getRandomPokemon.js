@@ -37,17 +37,35 @@ async function fetchApi(randomNum) {
   let pokemonTipus = clonedTemplate.querySelector(".tipus");
   let pokemonImg = clonedTemplate.querySelector(".img1");
   let pokemonImgBack = clonedTemplate.querySelector(".img2");
-  
+
   card.setAttribute("id", data.id);
   pokemonId.textContent = `#${data.id}`;
   randomPokemon.textContent = data.name;
   pokemonAtac.textContent = `attack: ${data.stats[1].base_stat}`;
   pokemonDefensa.textContent = `defense: ${data.stats[2].base_stat}`;
-  // pokemonTipus.textContent = data.name;
   pokemonImg.setAttribute("src", data.sprites.other.home.front_default);
   pokemonImgBack.setAttribute("src", data.sprites.back_default);
 
+  //Set Attribute Tipus:
+  // let isNotNull = true;
+  // let i = 0;
+  // let tipusArray = [];
+
+  // while (isNotNull) {
+  //   if(i >= 0) {
+  //     let tipo = data.types[i].type.name;
+  //     console.log(tipo);
+  //     tipusArray.push(`${tipo}, `);
+  //   } else {
+  //     isNotNull = false;
+  //   }
+  //   i++;
+
+  // }
+  // pokemonTipus.textContent = tipusArray;
+
   output.appendChild(clonedTemplate);
+
 }
 
 export { getRandomPokemon };

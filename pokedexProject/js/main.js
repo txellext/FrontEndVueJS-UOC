@@ -7,10 +7,17 @@ darkLightMode();
 
 getRandomPokemon();
 
-function onClickCards() {
+function onClickButtonRandom() {
   document
     .getElementById("button-random-pokemons")
     .addEventListener("click", getRandomPokemon);
 }
 
-onClickCards();
+onClickButtonRandom();
+
+// function onClickSearch() {
+//   getRandomPokemon
+//   document
+//   .getElementById("pokemon-name");
+//   .addEventListener("click", )
+// }

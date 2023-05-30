@@ -3,7 +3,7 @@ function darkLightMode() {
   const radios = document.querySelectorAll('input[name="theme"]');
 
   let themeColor = window.localStorage.getItem("theme");
-  console.log(themeColor);
+  //   console.log(themeColor);
 
   if (themeColor) {
     selectTheme(themeColor);
@@ -13,15 +13,6 @@ function darkLightMode() {
   radios.forEach((x) => {
     x.addEventListener("change", function () {
       selectTheme(this.value);
-      //   if (value == "dark") {
-      //     body.classList.remove("light");
-      //     body.classList.add("dark");
-      //     window - localStorage.setItem("theme", "dark");
-      //   } else if (value == "light") {
-      //     body.classList.remove("dark");
-      //     body.classList.add("light");
-      //     window - localStorage.setItem("theme", "light");
-      //   }
     });
   });
 }
@@ -30,11 +21,11 @@ function selectTheme(value) {
   if (value == "dark") {
     body.classList.remove("light");
     body.classList.add("dark");
-    window - localStorage.setItem("theme", "dark");
+    window.localStorage.setItem("theme", "dark");
   } else if (value == "light") {
     body.classList.remove("dark");
     body.classList.add("light");
-    window - localStorage.setItem("theme", "light");
+    window.localStorage.setItem("theme", "light");
   }
 }
 
