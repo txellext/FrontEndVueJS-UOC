@@ -14,12 +14,12 @@ onMounted(() => {
   });
 })
 
-const filteredCards = computed(() => {
-  return cards.value.filter((card) => {
-    //return photo.title.toLowerCase().includes(search.value.toLowerCase())
-    return card.title.toLowerCase().startsWith(search.value.toLowerCase())
-  })
-});
+// const filteredCards = computed(() => {
+//   return cards.value.filter((card) => {
+//     //return photo.title.toLowerCase().includes(search.value.toLowerCase())
+//     return card.name.toLowerCase().startsWith(search.value.toLowerCase())
+//   })
+// });
 
 </script>
 
@@ -29,7 +29,7 @@ const filteredCards = computed(() => {
     <input v-model="search" type="text" placeholder="type to search...">
     <br>
       <section class="cards">
-        <PokemonCard v-for="card in filteredCards" :key="card.id" :info="card" />          
+        <PokemonCard v-for="card in cards" :key="card.id" :info="card" />          
       </section> 
   </div>
 </template>

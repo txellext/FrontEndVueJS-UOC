@@ -1,8 +1,7 @@
 <script setup>
 
-//import { ref } from 'vue'
+
 const props = defineProps(['info']);
-//console.log(props.infoTurtles);
 
 
 </script>
@@ -10,8 +9,7 @@ const props = defineProps(['info']);
 <template>
   <article class="card">
     I'm a card!
-    <h2>{{ props.info.title }}</h2>
-    <img :src="props.info.thumbnailUrl" alt="">
+    <h2>{{ props.info.name }}</h2>
     <button @click="$router.push({name: 'card', params: {cardId: props.info.id}})">View More</button>
   </article>
 </template>
