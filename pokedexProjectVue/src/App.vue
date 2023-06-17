@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
 import { ref } from 'vue';
 
 const theme = ref('dark')
@@ -9,28 +8,20 @@ const changeTheme = (e) => {
   //console.log(e)
   document.body.className = e.target.value
 }
-
+          //TODO: Conditional only show if your are not in '/'.     
 </script>
 
 <template>
   <main class="themed" :class="theme">
     <header>
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
     
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-    
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/new">New</RouterLink>
-          <RouterLink to="/for">For</RouterLink>
-          <RouterLink to="/component">Component</RouterLink>
-          <RouterLink to="/api">API</RouterLink>
-          <RouterLink to="/api2">API2</RouterLink>
+      <div class="wrapper">    
+        <nav>     
+ 
+          <RouterLink to="/">Pokemons List</RouterLink>
         </nav>
-    
       </div>
+      
       <div class="settings">
         <label for="dark">Dark</label>
         <input type="radio" name="theme" id="dark" value="dark" v-model="theme" checked @change='changeTheme'>

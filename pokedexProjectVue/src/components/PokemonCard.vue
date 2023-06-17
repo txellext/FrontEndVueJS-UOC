@@ -9,10 +9,10 @@ const props = defineProps(['info']);
 
 <template>
   <article class="card">
-    I'm a photo!
+    I'm a card!
     <h2>{{ props.info.title }}</h2>
     <img :src="props.info.thumbnailUrl" alt="">
-    <button @click="$router.push({name: 'photo', params: {photoId: props.info.id}})">View More</button>
+    <button @click="$router.push({name: 'card', params: {cardId: props.info.id}})">View More</button>
   </article>
 </template>
 

@@ -1,36 +1,35 @@
 <script setup>
 
-import PhotoCard from '../components/PhotoCard.vue';
+import PokemonCard from '../components/PokemonCard.vue';
 import { ref, onMounted, computed } from 'vue';
 import myAPI from '../services/services.js';
 
-const photos = ref([])
+const cards = ref([])
 const search = ref('')
 
 onMounted(() => {
-  myAPI.getPhotos().then( (response) => {
+  myAPI.getPokemons().then( (response) => {
     console.log(response.data);
-    photos.value = response.data;
+    cards.value = response.data;
   });
 })
 
-const filteredPhotos = computed(() => {
-  return photos.value.filter((photo) => {
+const filteredCards = computed(() => {
+  return cards.value.filter((card) => {
     //return photo.title.toLowerCase().includes(search.value.toLowerCase())
-    return photo.title.toLowerCase().startsWith(search.value.toLowerCase())
+    return card.title.toLowerCase().startsWith(search.value.toLowerCase())
   })
-})
+});
 
 </script>
 
 <template>
   <div class="new">
-    <h1>API example</h1>
+    <h1>Pokédex</h1>
     <input v-model="search" type="text" placeholder="type to search...">
     <br>
       <section class="cards">
-        <PhotoCard v-for="photo in filteredPhotos" :key="photo.id" :info="photo" />       
-        <PhotoCard v-for="photo in photos" :key="photo.id" :info="photo" />       
+        <PokemonCard v-for="card in filteredCards" :key="card.id" :info="card" />          
       </section> 
   </div>
 </template>
