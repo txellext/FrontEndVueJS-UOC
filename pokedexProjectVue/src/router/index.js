@@ -16,6 +16,46 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/new',
+      name: 'new',
+      component: () => import('../views/NewView.vue')
+    },
+    {
+      path: '/for',
+      name: 'for',
+      component: () => import('../views/ForView.vue')
+    },
+    {
+      path: '/component',
+      name: 'component',
+      props: true,
+      component: () => import('../views/ComponentView.vue')
+    },
+    {
+      path: '/single/:turtleId',
+      name: 'single',
+      props: true,
+      component: () => import('../views/SingleView.vue')
+    },
+    {
+      path: '/api',
+      name: 'api',
+      props: true,
+      component: () => import('../views/ApiView.vue')
+    },
+    {
+      path: '/api2',
+      name: 'api2',
+      props: true,
+      component: () => import('../views/ApiView2.vue')
+    },
+    {
+      path: '/photo/:photoId',
+      name: 'photo',
+      props: true,
+      component: () => import('../views/PhotoView.vue')
     }
   ]
 })
