@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { uniquesNumbers } from '@/utils/getUniqueNumber'
 
 const myAPI = axios.create({
     baseURL:'https://pokeapi.co/api/v2',
@@ -12,34 +13,22 @@ const myAPI = axios.create({
 
 export default {
 
-    // getPokemons() {
-    //     let randomNum = -1;
-    //     let randomNumArray = [];
-    //     let i=0;
-    //     const numMax = 10;
-    //     let pokemons = [];
+    async getPokemons() {
 
-    //     while (!randomNumArray.includes(randomNum) || i < numMax) {
+        const arrayIds = uniquesNumbers(10)
+        const arrayPokemons = []
 
-    //         randomNum = Math.round(Math.random() * 1010);
-        
-    //         randomNumArray.push(randomNum);
+        for(let i =0; i<arrayIds.length; i++) {
+            const id= arrayIds[i]
+            const { data } = await this.getSingleCard(id)
+            arrayPokemons.push(data)
+        }
 
-    //         pokemons.push(myAPI.get(`/pokemon/${randomNum}`));
-    //         // return myAPI.get('/photos?_limit=10');
-    //         i++;
-    //     }
-    //     console.log(randomNumArray);
-    //     console.log(pokemons);
-    //     return pokemons;
-    // },
 
-    getPokemons() {
-        return myAPI.get('/pokemon?_limit=10')
+        return arrayPokemons
     },
 
-    getSingleCard(id)  {
-        // return myAPI.get('/photos/'+id);
-        return myAPI.get(`/pokemon/${id}`);
+    getSingleCard(id){
+        return myAPI.get(`/pokemon/${id}`)
     }
 }

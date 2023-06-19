@@ -7,19 +7,16 @@ import myAPI from '../services/services.js';
 const cards = ref([])
 const search = ref('')
 
-onMounted(() => {
-  myAPI.getPokemons().then( (response) => {
-    console.log(response.data);
-    cards.value = response.data;
+onMounted(async () => {
+    cards.value = await myAPI.getPokemons()
   });
-})
 
-// const filteredCards = computed(() => {
-//   return cards.value.filter((card) => {
-//     //return photo.title.toLowerCase().includes(search.value.toLowerCase())
-//     return card.name.toLowerCase().startsWith(search.value.toLowerCase())
-//   })
-// });
+  const filteredCards = computed(() => {
+    return cards.value.filter((card) => {
+      //return photo.title.toLowerCase().includes(search.value.toLowerCase())
+      return card.name.toLowerCase().startsWith(search.value.toLowerCase())
+    })
+  });
 
 </script>
 
@@ -29,7 +26,7 @@ onMounted(() => {
     <input v-model="search" type="text" placeholder="type to search...">
     <br>
       <section class="cards">
-        <PokemonCard v-for="card in cards" :key="card.id" :info="card" />          
+        <PokemonCard v-for="card in filteredCards" :key="card.id" :info="card" />          
       </section> 
   </div>
 </template>
